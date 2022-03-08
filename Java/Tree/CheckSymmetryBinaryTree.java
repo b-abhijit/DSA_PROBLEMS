@@ -1,3 +1,5 @@
+// To check if a binary tree is symmetric or not
+
 package Tree;
 
 import Tree.utility.CreateBinaryTree;
