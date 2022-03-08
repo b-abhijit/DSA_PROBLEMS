@@ -8,7 +8,7 @@ import java.util.Stack;
 
 public class InOrderTraversal {
     public static void main(String[] args) {
-        TreeNode root = CreateBinaryTree.CreateBinaryTree();
+        TreeNode root = CreateBinaryTree.createBinaryTree();
 
         System.out.print("In Order Traversal (Recursive):");
         // Call to recursive method

@@ -7,7 +7,7 @@ import Tree.utility.TreeNode;
 
 public class MaximumDepthBinaryTree {
     public static void main(String[] args) {
-        TreeNode root = CreateBinaryTree.CreateBinaryTree();
+        TreeNode root = CreateBinaryTree.createBinaryTree();
 
         System.out.printf("Maximum depth: " + maxDepth(root));
     }

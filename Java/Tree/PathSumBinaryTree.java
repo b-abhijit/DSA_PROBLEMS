@@ -1,3 +1,5 @@
+// To find if the sum of all nodes in a path from root to leaf equals the given target sum
+
 package Tree;
 
 import Tree.utility.CreateBinaryTree;
@@ -5,7 +7,7 @@ import Tree.utility.TreeNode;
 
 public class PathSumBinaryTree {
     public static void main(String[] args) {
-        TreeNode root = CreateBinaryTree.CreateBinaryTree();
+        TreeNode root = CreateBinaryTree.createBinaryTree();
         int targetSum = 10;
         int currentSum = Integer.MIN_VALUE;
 

@@ -8,7 +8,7 @@ import java.util.Stack;
 
 public class PreOrderTraversal {
     public static void main(String[] args) {
-        TreeNode root = CreateBinaryTree.CreateBinaryTree();
+        TreeNode root = CreateBinaryTree.createBinaryTree();
 
         System.out.print("Pre Order Traversal (Recursive):");
         // Call to recursive method

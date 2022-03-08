@@ -7,7 +7,7 @@ import Tree.utility.TreeNode;
 
 public class InvertBinaryTree {
     public static void main(String[] args) {
-        TreeNode root = CreateBinaryTree.CreateBinaryTree();
+        TreeNode root = CreateBinaryTree.createBinaryTree();
 
         root = invertBinaryTree(root);
     }

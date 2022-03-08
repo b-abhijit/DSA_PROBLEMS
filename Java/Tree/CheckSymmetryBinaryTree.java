@@ -7,7 +7,7 @@ import Tree.utility.TreeNode;
 
 public class CheckSymmetryBinaryTree {
     public static void main(String[] args) {
-        TreeNode root = CreateBinaryTree.CreateBinaryTree();
+        TreeNode root = CreateBinaryTree.createBinaryTree();
 
         System.out.printf("Is Symmetric: " + isSymmetric(root.left, root.right));
     }

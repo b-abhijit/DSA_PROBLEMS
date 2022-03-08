@@ -12,7 +12,7 @@ import java.util.Queue;
 
 public class BFSTraversal {
     public static void main(String[] args) {
-        TreeNode root = CreateBinaryTree.CreateBinaryTree();
+        TreeNode root = CreateBinaryTree.createBinaryTree();
         List<List<Integer>> result = new ArrayList<>();
 
         result = bfsTraversal(root, result);
