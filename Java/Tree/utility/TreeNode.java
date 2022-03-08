@@ -5,7 +5,7 @@ public class TreeNode {
     public TreeNode right;
     public int val;
 
-    TreeNode(int val) {
+    public TreeNode(int val) {
         this.val = val;
         this.left = null;
         this.right = null;
