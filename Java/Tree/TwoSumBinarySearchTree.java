@@ -1,4 +1,4 @@
-// Check if a pair with the given sum exists
+// Check if a pair with the given sum exists in a binary search tree
 
 package Tree;
 
