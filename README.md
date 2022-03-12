@@ -1,1 +1,1 @@
-This repository contains solution to some important problems in Data Structure & Algorithm
+This repository is a collection of some problems in Data Structure & Algorithms
