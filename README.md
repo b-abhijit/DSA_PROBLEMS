@@ -1,1 +1,1 @@
-This repository is a collection of some problems in Data Structure & Algorithms
+This repository is a collection of some problems in Data Structure & Algorithms (DSA)
