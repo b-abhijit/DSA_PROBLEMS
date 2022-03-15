@@ -5,14 +5,15 @@ package Tree;
 import Tree.utility.CreateBinaryTree;
 import Tree.utility.TreeNode;
 
-import java.util.PriorityQueue;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.TreeMap;
 
 public class TopViewBinaryTree {
     public static void main(String[] args) {
         TreeNode root = CreateBinaryTree.createBinaryTree();
         TreeMap<Integer, Integer> treeMap = new TreeMap<>();
-        PriorityQueue<Pair> pq = new PriorityQueue<>();
+        Queue<Pair> pq = new LinkedList<>();
 
         topViewDFS(root, treeMap, 0);
         System.out.print("Top view of binary tree (DFS):");
@@ -42,7 +43,7 @@ public class TopViewBinaryTree {
     }
 
     // BFS Approach
-    static void topViewBFS(TreeNode root, PriorityQueue<Pair> pq, TreeMap<Integer, Integer> treeMap) {
+    static void topViewBFS(TreeNode root, Queue<Pair> pq, TreeMap<Integer, Integer> treeMap) {
         pq.offer(new Pair(0, root));
 
         while (!pq.isEmpty()) {
