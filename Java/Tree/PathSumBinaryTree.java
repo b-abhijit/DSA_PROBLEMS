@@ -9,24 +9,18 @@ public class PathSumBinaryTree {
     public static void main(String[] args) {
         TreeNode root = CreateBinaryTree.createBinaryTree();
         int targetSum = 10;
-        int currentSum = Integer.MIN_VALUE;
 
-        System.out.printf("Exist target sum: " + checkTargetSum(root, targetSum, currentSum));
+        System.out.printf("Exist target sum: " + checkTargetSum(root, targetSum, 0));
     }
 
     static boolean checkTargetSum(TreeNode root, int targetSum, int currentSum) {
-        if (currentSum == Integer.MIN_VALUE)
-            currentSum = root.val;
-        else
-            currentSum += root.val;
+        if (root == null)
+            return false;
 
-        if (targetSum == currentSum && root.left == null && root.right == null)
+        if (root.left == null && root.right == null && currentSum + root.val == targetSum)
             return true;
 
-
-        if (root.left != null && checkTargetSum(root.left, targetSum, currentSum) == true)
-            return true;
-        if (root.right != null && checkTargetSum(root.right, targetSum, currentSum) == true)
+        if (checkTargetSum(root.left, targetSum, currentSum + root.val) || checkTargetSum(root.right, targetSum, currentSum + root.val))
             return true;
 
         return false;
